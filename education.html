@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body{
+            background-color: #F5F5DC;
+            color: #3E2F1C;
+            display: flex;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+           background-color:  #FFFFFF; 
+           border:3px solid #121211;
+           margin :10%;
+           height: fit-content;
+           width: fit-content;
+           width: 400px;
+           padding: 20px;
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+        }
+
+
+        .graduation h3{
+            margin-top: 15px;
+            margin-bottom: 0%;
+        }
+
+        .hsc h3{
+            margin-top: 20px;
+            margin-bottom: 0%;
+        }
+        .ssc h3{
+            margin-top: 20px;
+            margin-bottom: 0%;
+        }
+        .row{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        input{
+            padding: 5px;
+            width: 100%;   
+        }
+        input:hover{
+            border: 2px solid black;
+        }
+        .container button{
+            margin-left: 60%;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #c39773;
+            transition: 0.3s ease;
+            color: #FFFFFF;
+        }
+
+        button:hover{
+            background-color: #8C5E3C;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Education Details</h2>
+
+        <div class="graduation">
+            <h3>GRADUATION</h3>
+            <div class="row">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Percentage">
+                <input type="text" placeholder="Passing Year">
+            </div>
+        </div>
+        <div class="hsc">
+            <h3>HSC</h3>
+            <div class="row">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Percentage">
+                <input type="text" placeholder="Passing Year">
+            </div>
+        </div>
+        <div class="ssc">
+            <h3>SSC</h3>
+            <div class="row">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Percentage">
+                <input type="text" placeholder="Passing Year">
+            </div>
+        </div>
+        <button onclick="window.location.href='course.html'">Next</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview</title>
+    <style>
+        body{
+            background-color: #F5F5DC;
+            color: #3E2F1C;
+            display: flex;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+           background-color:  #FFFFFF; 
+           border:3px solid #121211;
+           margin :10%;
+           height: fit-content;
+           width: fit-content;
+           width: 400px;
+           padding: 20px;
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+        }
+        .row{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        input{
+            padding: 15px;
+            width: 100%;
+
+        }
+
+        input:hover{
+            border: 2px solid black;
+        }
+        .row button{
+            margin-left: auto;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #c39773;
+            transition: 0.3s ease;
+            color: #FFFFFF;
+        }
+        .row a{
+            margin-right: auto;
+            margin-top: 10px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        button:hover{
+            background-color: #8C5E3C;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Preview Your Details</h1>
+        <div class="row">
+            <input type="text" placeholder="Personal Information">
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Guardian Details">
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Address Information">
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Education Background">
+        </div>
+        <div class="row">
+            <input type="text"placeholder="Course Details" >
+        </div>
+        <div class="row">
+            <a href="course.html">Previous</a>
+            <button class="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

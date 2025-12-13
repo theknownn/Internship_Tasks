@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address-Details</title>
+    <style>
+        body{
+            background-color: #F5F5DC;
+            color: #3E2F1C;
+            display: flex;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container{
+           background-color:  #FFFFFF; 
+           border:3px solid #121211;
+           margin :10%;
+           height: fit-content;
+           width: fit-content;
+           width: 400px;
+           padding: 20px;
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+        }
+        .permanent h3{
+            margin-top: 10px;
+        }
+
+        .row{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        input{
+            padding: 5px;
+            width: 100%;   
+        }
+        input:hover{
+            border: 2px solid black;
+        }
+
+        .container button{
+            margin-left: 60%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #c39773;
+            transition: 0.3s ease;
+            color: #0d0707;
+        }
+        button:hover{
+            background-color: #8C5E3C;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Address Details</h2>
+        <div class="permanent">
+            <h3>Permanent Address</h3>
+            <div class="row">
+                <input type="address" placeholder="Address Line">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Pin Code">
+            </div>
+        </div>
+        <div class="temporary">
+            <h3>Temporary Address</h3>
+            <div class="row">
+                 <input type="address" placeholder="Address Line">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Pin Code">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="State">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="Country">
+            </div>
+        </div>
+
+        <button onclick="window.location.href='education.html'">Next</button>
+    </div>
+</body>
+</html>
